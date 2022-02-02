@@ -21,7 +21,6 @@
 
 .qualities__box {
   display: flex;
-  // width: 270px;
   height: 120px;
   justify-content: center;
   align-items: center;
@@ -34,8 +33,10 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  text-align: center;
   margin-bottom: 10px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 .qualities__text {
   line-height: 1.71;
