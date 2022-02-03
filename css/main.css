@@ -143,8 +143,7 @@ body {
 }
 
 .modal {
-  width: 528px;
-  min-height: 581px;
+  width: 94vw;
   background-color: var(--fifth-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -154,6 +153,20 @@ body {
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--transition-dur-tim);
   padding: 40px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal__close {
@@ -295,14 +308,23 @@ body {
 }
 
 .checkbox {
-  width: 425px;
   font-weight: 400;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   color: var(--fourth-color);
   margin: 0 auto 30px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox {
+    width: 425px;
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__icon {
@@ -449,31 +471,48 @@ body {
 }
 
 .block {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: var(--seventh-color);
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-block-image.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1600px;
-  min-width: 1200px;
-  height: 600px;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .block {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    min-width: 1200px;
+    height: 600px;
+  }
 }
 
 .block__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--fifth-color);
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  max-width: 696px;
+  max-width: 360px;
+}
+
+@media screen and (min-width: 1200px) {
+  .block__title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
 
 .qualities__list {
