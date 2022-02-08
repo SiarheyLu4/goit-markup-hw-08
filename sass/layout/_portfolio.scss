@@ -72,7 +72,9 @@
 }
 
 .grid__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
   transition: box-shadow var(--transition-dur-tim);
   &:hover,
@@ -110,6 +112,7 @@
 .product {
   padding: 20px 24px;
   border: 1px solid var(--twelfth-color);
+  flex-grow: 1;
 }
 
 .product__title {

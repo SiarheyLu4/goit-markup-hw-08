@@ -1,10 +1,17 @@
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid var(--tenth-color);
-  max-width: 1600px;
-  min-width: 1200px;
   margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    max-width: 1600px;
+    min-width: 1200px;
+  }
 }
 
 .header__container {
@@ -20,8 +27,11 @@
 }
 
 .site-nav {
-  display: flex;
+  display: none;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .site-nav__list {
@@ -62,8 +72,11 @@
 }
 
 .header__contact {
-  display: flex;
+  display: none;
   margin-left: auto;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .header__link {
