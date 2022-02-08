@@ -573,7 +573,7 @@ body {
   .qualities__list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
+    margin: -15px;
   }
 }
 
@@ -584,7 +584,7 @@ body {
 @media screen and (min-width: 768px) {
   .qualities__item {
     flex-basis: calc(100% / 2 - 30px);
-    margin-right: 30px;
+    margin: 15px;
   }
 }
 
@@ -643,12 +643,12 @@ body {
 .doing__list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
+  margin: -15px;
 }
 
 .doing__item {
   flex-basis: calc(100% / 3 - 30px);
-  margin-right: 30px;
+  margin: 15px;
   position: relative;
 }
 
@@ -696,7 +696,7 @@ body {
   .team__list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
+    margin: -15px;
   }
 }
 
@@ -710,7 +710,7 @@ body {
 @media screen and (min-width: 768px) {
   .team__item {
     flex-basis: calc(100% / 2 - 30px);
-    margin-right: 30px;
+    margin: 15px;
   }
 }
 
@@ -773,14 +773,12 @@ body {
 .clients__list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
+  margin: -15px;
 }
 
 .clients__item {
   flex-basis: calc(100% / 2 - 30px);
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -813,6 +811,7 @@ body {
 }
 
 .clients__icon {
+  width: 100%;
   fill: currentColor;
 }
 
@@ -1055,16 +1054,14 @@ body {
   .grid {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
+    margin: -15px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .grid__item {
     flex-basis: calc(100% / 2 - 30px);
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin: 15px;
   }
 }
 
