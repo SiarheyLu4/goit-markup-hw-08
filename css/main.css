@@ -617,6 +617,7 @@ body {
 
 .mob-social {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mob-social__item:not(:last-child) {
